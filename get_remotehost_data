@@ -1,0 +1,11 @@
+import socket
+
+hosts = ['bbc.com', 'cnn.com', 'foxnews.com']
+
+for h in hosts:
+  try:
+    print('Ip address of %s: %s'(h, socket.gethostbyname(h)))
+  except socket.error as err_msg:
+      print(host, err_msg)
+  
+  
