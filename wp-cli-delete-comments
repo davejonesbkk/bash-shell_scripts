@@ -1,0 +1,1 @@
+wp comment delete --allow-root --path=/home/$SITE/public_html $(wp comment list --status=hold --field=ID --path=/home/$SITE/public_html --allow-root)
