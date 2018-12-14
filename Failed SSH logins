@@ -1,0 +1,5 @@
+#!/bin/bash
+#Add your email, set cronjob for script to run daily, weekly etc
+EMAIL=
+cd /var/log 
+tail -n 100 auth.log | grep -i "failed" | mail -s "Failed SSH Logins" $EMAIL
